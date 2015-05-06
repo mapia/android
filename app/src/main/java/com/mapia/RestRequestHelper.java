@@ -22,6 +22,7 @@ import retrofit.http.GET;
 import retrofit.http.Headers;
 import retrofit.http.POST;
 import retrofit.http.Path;
+import retrofit.http.Query;
 
 
 public class RestRequestHelper {
@@ -83,14 +84,14 @@ public class RestRequestHelper {
         @GET("/auth/profile")
         void profile(Callback<JsonObject> callback);
 
-        @GET("/post?type={map-type}&lat={center-latitude}&lng={center-longitude}&level={map-level}")
-        void posts(Callback<JsonArray> callback, @Path("map-type") String mapType,
-                   @Path("center-latitude")double lat, @Path("center-longitude")double lng,
-                   @Path("map-level")float level);
+        @GET("/post")
+        void posts(@Query("map-type") String mapType,
+                   @Query("center-latitude")double lat, @Query("center-longitude")double lng,
+                   @Query("map-level")float level, Callback<JsonObject> callback);
         @GET("/post?type={map-type}&(group={group-id})&lat={center-latitude}&lng={center-longitude}&level={map-level}")
-        void posts(Callback<JsonArray> callback, @Path("map-type") String mapType, @Path("group-id") int groupID,
-                   @Path("center-latitude")double lat, @Path("center-longitude")double lng,
-                   @Path("map-level")float level);
+        void posts(@Query("map-type") String mapType, @Query("group-id") int groupID,
+                   @Query("center-latitude")double lat, @Query("center-longitude")double lng,
+                   @Query("map-level")float level, Callback<JsonObject> callback);
 
     }
 
@@ -138,11 +139,11 @@ public class RestRequestHelper {
         restRequest.profile(callback);
     }
 
-    public void posts(Callback<JsonArray> callback, String mapType, double lat, double lng, float level){
-        restRequest.posts(callback, mapType, lat, lng, level);
+    public void posts(String mapType, double lat, double lng, float level, Callback<JsonObject> callback){
+        restRequest.posts(mapType, lat, lng, level, callback);
     }
-    public void posts(Callback<JsonArray> callback, String mapType, int groupID, double lat, double lng, float level){
-        restRequest.posts(callback, mapType, groupID, lat, lng, level);
+    public void posts(String mapType, int groupID, double lat, double lng, float level, Callback<JsonObject> callback){
+        restRequest.posts(mapType, groupID, lat, lng, level, callback);
     }
 
 }

@@ -52,9 +52,11 @@ public class MapGroupFragment extends MapFragment {
 		try {
 			RestRequestHelper requestHelper = RestRequestHelper.newInstance();
 
-			requestHelper.posts(new Callback<JsonArray>() {
+			requestHelper.posts("group", this.currentGroupNumber, MapActivity.cameraLatlng.latitude, MapActivity.cameraLatlng.longitude, MapActivity.cameraZoom,
+					new Callback<JsonObject>() {
 				@Override
-				public void success(JsonArray jsonArray, Response response) {
+				public void success(JsonObject jO, Response response) {
+					JsonArray jsonArray = jO.get("posts").getAsJsonArray();
 					Toast.makeText(getActivity(),"Group 글 읽어오기 성공".toString(), Toast.LENGTH_LONG).show();
 					for(int i=0;i<jsonArray.size();i++){
 						JsonObject jsonObject = (JsonObject)jsonArray.get(i);
@@ -71,7 +73,7 @@ public class MapGroupFragment extends MapFragment {
 					Toast.makeText(getActivity(),"글 읽어오기실패".toString(), Toast.LENGTH_LONG).show();
 					error.printStackTrace();
 				}
-			},"private", this.currentGroupNumber, MapActivity.cameraLatlng.latitude, MapActivity.cameraLatlng.longitude, MapActivity.cameraZoom);
+			});
 		}  catch (Exception e) {
 			e.printStackTrace();
 		}
