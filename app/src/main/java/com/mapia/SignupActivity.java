@@ -31,7 +31,6 @@ public class SignupActivity extends Activity implements OnClickListener {
     public final static String mytag = "test";
     private EditText edtID, edtPW, edtPWCheck;
     private ImageView imgIDStatus, imgPWStatus, imgPWCheckStatus;
-    private TextView txtClause;
     private Button btnSignup;
     private Boolean flagIDDup = false, flagIDStatus = false, flagPWStatus = false, flagPWCheckStatus = false;
 
@@ -50,8 +49,6 @@ public class SignupActivity extends Activity implements OnClickListener {
         imgPWStatus = (ImageView)findViewById(com.mapia.R.id.imgPWStatus);
         edtPWCheck = (EditText)findViewById(com.mapia.R.id.edtPWCheck);
         imgPWCheckStatus = (ImageView)findViewById(com.mapia.R.id.imgPWCheckStatus);
-        txtClause = (TextView)findViewById(com.mapia.R.id.txtClause);
-        txtClause.setMovementMethod(new ScrollingMovementMethod());
         btnSignup = (Button)findViewById(R.id.btnSignup);
 
 
