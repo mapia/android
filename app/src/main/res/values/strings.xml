@@ -56,4 +56,5 @@
         <string name="search_friend">Search</string>
 
         <string name="activity_signup_clause">계속 진행할 시 <b>개인정보취급방침</b>을 읽었으며 <b>서비스 약관</b>에\n동의하신 것으로 간주됩니다.</string>
+    <string name="title_activity_write_post">WritePostActivity</string>
 </resources>

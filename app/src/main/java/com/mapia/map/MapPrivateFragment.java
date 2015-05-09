@@ -38,6 +38,7 @@ public class MapPrivateFragment extends MapFragment{
 	public void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
+		if(MapActivity.txtMapName!=null) MapActivity.txtMapName.setText("Private");
 		for(int i=0;i<markerDatas.size();i++){
 			markerDatas.get(i).marker.remove();
 		}

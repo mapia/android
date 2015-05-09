@@ -2,7 +2,9 @@ package com.mapia.map;
 
 import java.util.ArrayList;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -15,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.google.android.gms.identity.intents.AddressConstants;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -91,7 +94,7 @@ public class MapFragment extends Fragment implements OnClickListener, LocationLi
 		MapActivity.currentLatlng = new LatLng(location.getLatitude(), location.getLongitude());
 		if (cameraMoveWhenCreate == false) {
 			if (MapActivity.cameraLatlng != null)
-				this.backgroundMap.animateCamera((CameraUpdate) CameraUpdateFactory.newLatLngZoom(MapActivity.currentLatlng, MapActivity.cameraZoom));
+				this.backgroundMap.animateCamera((CameraUpdate) CameraUpdateFactory.newLatLngZoom(MapActivity.currentLatlng, 15));
 			cameraMoveWhenCreate = true;
 		}
 		//locationManager.removeUpdates(this);
@@ -115,18 +118,9 @@ public class MapFragment extends Fragment implements OnClickListener, LocationLi
 
 	@Override
 	public void onMapClick(LatLng point) {
-		this.markerDatas.add(new MarkerData(point));
-		this.markerDatas.get(this.markerDatas.size()-1).marker = this.backgroundMap.addMarker(new MarkerOptions().position(markerDatas.get(markerDatas.size()-1).location).title("Private"));
-
-		RestRequestHelper requestHelper = RestRequestHelper.newInstance();
-		requestHelper.posts("", point, new Callback<JsonObject>() {
-			@Override
-			public void success(JsonObject jsonObject, Response response){
-			}
-			@Override
-			public void failure(RetrofitError error) {
-			}
-		});
+		Intent intent = new Intent(getActivity(), WritePostActivity.class);
+		intent.putExtra("latlng",point);
+		startActivityForResult(intent, 0);
 		// TODO Auto-generated method stub
 	}
 
@@ -134,5 +128,32 @@ public class MapFragment extends Fragment implements OnClickListener, LocationLi
 	public void onCameraChange(CameraPosition cameraPosition) {
 		MapActivity.cameraLatlng = cameraPosition.target;
 		MapActivity.cameraZoom = cameraPosition.zoom;
+	}
+
+	@Override
+	public void onActivityResult(int requestCode, int resultCode, final Intent data) {
+		switch(requestCode){
+			case 0:
+				if(resultCode== Activity.RESULT_OK) {
+					RestRequestHelper requestHelper = RestRequestHelper.newInstance();
+					requestHelper.posts(
+							data.getStringExtra("comment"), (LatLng)data.getParcelableExtra("latlng"), new Callback<JsonObject>() {
+						@Override
+						public void success(JsonObject jsonObject, Response response) {
+							markerDatas.add(new MarkerData((LatLng)data.getParcelableExtra("latlng")));
+							markerDatas.get(markerDatas.size()-1).marker = backgroundMap.addMarker(new MarkerOptions().position(markerDatas.get(markerDatas.size()-1).location).title(data.getStringExtra("comment")));
+
+						}
+
+						@Override
+						public void failure(RetrofitError error) {
+						}
+					});
+				}
+				else{
+
+				}
+				break;
+		}
 	}
 }

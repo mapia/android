@@ -3,12 +3,19 @@ package com.mapia.map;
 import com.google.android.gms.maps.model.LatLng;
 import com.mapia.R;
 
+import android.annotation.TargetApi;
+import android.app.ActionBar;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.text.Layout;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class MapActivity extends FragmentActivity implements OnClickListener {
 
@@ -17,17 +24,33 @@ public class MapActivity extends FragmentActivity implements OnClickListener {
 	public static LatLng currentLatlng;
 	public static LatLng cameraLatlng = new LatLng(0,0);
 	public static float cameraZoom = 15;
+	public static ImageButton imgBtnNav, imgBtnSearch;
+	public static TextView txtMapName;
 	Button btn1, btn2, btn3, btn4;
 	MapPrivateFragment mapPrivateFragment = null;
 	MapPublicFragment mapPublicFragment = null;
 	MapFollowFragment mapFollowFragment = null;
 	MapGroupFragment mapGroupFragment = null;
 	Fragment lastFragment = null;
-	
+
+	@TargetApi(11)
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+			super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_map);
+
+		ActionBar mActionBar = getActionBar();
+		mActionBar.setDisplayShowHomeEnabled(false);
+		mActionBar.setDisplayShowTitleEnabled(false);
+		LayoutInflater mInflater = LayoutInflater.from(this);
+		View mCustomView = mInflater.inflate(R.layout.actionbar_activity_map, null);
+
+		imgBtnNav = (ImageButton)mCustomView.findViewById(R.id.actBtnNavi);
+		imgBtnSearch = (ImageButton)mCustomView.findViewById(R.id.actBtnSearch);
+		txtMapName = (TextView)mCustomView.findViewById(R.id.actTxtMapName);
+
+		mActionBar.setCustomView(mCustomView);
+		mActionBar.setDisplayShowCustomEnabled(true);
 
 		btn1 = (Button)findViewById(R.id.btn_Fragment1);
 		btn2 = (Button)findViewById(R.id.btn_Fragment2);

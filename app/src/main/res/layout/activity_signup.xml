@@ -140,6 +140,7 @@
         android:id="@+id/textView2"
         android:gravity="center"
         android:textSize="11sp"
+        android:textColor="#7f8992"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
