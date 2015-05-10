@@ -1,18 +1,10 @@
 package com.mapia;
 
 import com.google.android.gms.maps.model.LatLng;
-import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-import org.json.JSONArray;
-
-import java.io.IOException;
 import java.net.CookieHandler;
-import java.net.CookieManager;
-import java.net.URI;
-import java.sql.Timestamp;
-import java.util.List;
-import java.util.Map;
+import java.util.ArrayList;
 
 import retrofit.Callback;
 import retrofit.RequestInterceptor;
@@ -21,7 +13,6 @@ import retrofit.http.Body;
 import retrofit.http.GET;
 import retrofit.http.Headers;
 import retrofit.http.POST;
-import retrofit.http.Path;
 import retrofit.http.Query;
 
 
@@ -29,7 +20,7 @@ public class RestRequestHelper {
 
     private static RestRequestHelper instance;
 
-    private RestCookieManager cookieManager;
+    public RestCookieManager cookieManager;
     private RestAdapter restAdapter;
     private RestRequest restRequest;
 
@@ -125,10 +116,21 @@ public class RestRequestHelper {
         restRequest.login(userJO, callback);
     }
 
+
     public void posts(String content, LatLng latlng, Callback<JsonObject> callback){
         PostJsonRequest postJO = null;
         try{
             postJO = new PostJsonRequest(content, latlng);
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+        restRequest.posts(postJO, callback);
+    }
+
+    public void posts(String content, LatLng latlng, ArrayList<String> filelist, Callback<JsonObject> callback){
+        PostJsonRequest postJO = null;
+        try{
+            postJO = new PostJsonRequest(content, latlng, filelist);
         } catch(Exception e){
             e.printStackTrace();
         }
@@ -146,31 +148,27 @@ public class RestRequestHelper {
         restRequest.posts(mapType, groupID, lat, lng, level, callback);
     }
 
-}
+    public void deleteCookie(){
+        if(cookieManager != null) {
+            cookieManager.deleteAllCookies();
+        }
 
-class RestCookieManager extends CookieManager {
-
-    private String currentCookie;
-
-    @Override
-    public void put(URI uri, Map<String, List<String>> stringListMap) throws IOException {
-        super.put(uri, stringListMap);
-        if (stringListMap != null && stringListMap.get("Set-Cookie") != null)
-            for (String string : stringListMap.get("Set-Cookie")) {
-                if (string.contains("session")) {
-                    currentCookie = string;
-                }
-            }
     }
 
-    public String getCurrentCookie() {
-        return currentCookie;
-    }
 }
+
 
 class PostJsonRequest{
     final String content;
+    ArrayList<String> filelist = new ArrayList<String>();
     final double lat, lng;
+
+    PostJsonRequest(String content, LatLng latlng, ArrayList<String> filelist){
+        this.content = content;
+        this.lat = latlng.latitude;
+        this.lng = latlng.longitude;
+        this.filelist = filelist;
+    }
 
     PostJsonRequest(String content, LatLng latlng){
         this.content = content;

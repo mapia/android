@@ -3,7 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.mapia.map.WritePostActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        <LinearLayout android:id="@+id/transfers_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
 
+    </ScrollView>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,6 +33,26 @@
                 android:text=""
                 android:inputType="textMultiLine"
                 android:scrollHorizontally="false" />
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사진첩"
+                android:layout_gravity="bottom" />
+
+
+            <Button
+                android:id="@+id/btnVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="동영상"
+                android:layout_gravity="bottom" />
+
 
             <Button
                 android:id="@+id/btnCancel"

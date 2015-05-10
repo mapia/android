@@ -25,6 +25,18 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".s3.S3Activity"
+            android:label="S3Acitivity" >
+        </activity>
+        <activity
+            android:name=".s3.DownloadActivity"
+            android:label="DownloadAcitivity" >
+        </activity>
+        <service
+            android:name=".s3.network.NetworkService"
+            android:exported="false"/>
+
+        <activity
             android:name=".SignupActivity"
             android:label="@string/title_activity_signup" >
         </activity>

@@ -1,7 +1,5 @@
 package com.mapia.map;
 
-import java.util.ArrayList;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -14,10 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 
-import com.google.android.gms.identity.intents.AddressConstants;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -29,6 +25,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.gson.JsonObject;
 import com.mapia.R;
 import com.mapia.RestRequestHelper;
+
+import java.util.ArrayList;
 
 import retrofit.Callback;
 import retrofit.RetrofitError;
@@ -78,7 +76,9 @@ public class MapFragment extends Fragment implements OnClickListener, LocationLi
 	protected void drawMarker(ArrayList<MarkerData> markerDatas){
 		for(int i=0;i<markerDatas.size();i++){
 			markerDatas.get(i).marker = this.backgroundMap.addMarker(new MarkerOptions().position(markerDatas.get(i).location).title(type_string[type_num]));
-		}
+            //Always show content -> should be replaced to customized circle
+            markerDatas.get(i).marker.showInfoWindow();
+        }
 	}
 	@Override
 	public void onClick(View v) {
@@ -122,6 +122,7 @@ public class MapFragment extends Fragment implements OnClickListener, LocationLi
 		intent.putExtra("latlng",point);
 		startActivityForResult(intent, 0);
 		// TODO Auto-generated method stub
+
 	}
 
 	@Override
@@ -137,11 +138,24 @@ public class MapFragment extends Fragment implements OnClickListener, LocationLi
 				if(resultCode== Activity.RESULT_OK) {
 					RestRequestHelper requestHelper = RestRequestHelper.newInstance();
 					requestHelper.posts(
-							data.getStringExtra("comment"), (LatLng)data.getParcelableExtra("latlng"), new Callback<JsonObject>() {
+							data.getStringExtra("comment"), (LatLng)data.getParcelableExtra("latlng"), (ArrayList<String>)data.getStringArrayListExtra("filelist"), new Callback<JsonObject>() {
 						@Override
 						public void success(JsonObject jsonObject, Response response) {
+//                            String filename = ((ArrayList<String>)data.getStringArrayListExtra("filelist")).get(0);
+//                            String keyPrefix = "us-east-1:6638a26e-2810-4e4b-8d50-11cce837133f/";
+//                            String[] keyArr = new String[1];
+//                            keyArr[0] = keyPrefix+filename;
+//                            TransferController.download(this, keyArr);
+
 							markerDatas.add(new MarkerData((LatLng)data.getParcelableExtra("latlng")));
-							markerDatas.get(markerDatas.size()-1).marker = backgroundMap.addMarker(new MarkerOptions().position(markerDatas.get(markerDatas.size()-1).location).title(data.getStringExtra("comment")));
+							markerDatas.get(markerDatas.size()-1).marker = backgroundMap.addMarker(
+                                    new MarkerOptions()
+                                            .position(markerDatas.get(markerDatas.size()-1).location)
+                                            .title(data.getStringExtra("comment"))
+                            );
+
+
+
 
 						}
 

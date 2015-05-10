@@ -35,7 +35,7 @@ public class LoginActivity extends Activity implements OnClickListener{
 
     // RSA 공개키
     private String publicKey;
-
+    public RestRequestHelper requestHelper;
 
     protected void loginCheck(String id, String pw){
 
@@ -73,7 +73,7 @@ public class LoginActivity extends Activity implements OnClickListener{
         });
 
 
-        RestRequestHelper requestHelper = RestRequestHelper.newInstance();
+        requestHelper = RestRequestHelper.newInstance();
         // RSA 공개키를 받아오기 위한 요청
         requestHelper.login(new Callback<JsonObject>() {
             @Override
@@ -174,7 +174,6 @@ public class LoginActivity extends Activity implements OnClickListener{
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-
                 break;
             case R.id.btnSignup:
                 startActivity(new Intent(this, SignupActivity.class));

@@ -28,6 +28,17 @@
         android:layout_gravity="center_horizontal" />
 
     <ImageButton
+        android:id="@+id/btnLogout"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:src="@drawable/dot"
+        android:scaleType="fitCenter"
+        android:layout_toRightOf="@+id/actTxtMapName"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/actBtnSearch"
+        android:layout_toStartOf="@+id/actBtnSearch" />
+    <ImageButton
         android:id="@+id/actBtnSearch"
         android:layout_width="30dp"
         android:layout_height="30dp"
