@@ -10,12 +10,14 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.google.android.gms.identity.intents.AddressConstants;
 import com.google.android.gms.maps.CameraUpdate;
@@ -136,17 +138,21 @@ public class MapFragment extends Fragment implements OnClickListener, LocationLi
 			case 0:
 				if(resultCode== Activity.RESULT_OK) {
 					RestRequestHelper requestHelper = RestRequestHelper.newInstance();
+					final LatLng postLatlng = (LatLng)data.getParcelableExtra("latlng");
+					final String postComment = (String)data.getStringExtra("comment");
 					requestHelper.posts(
-							data.getStringExtra("comment"), (LatLng)data.getParcelableExtra("latlng"), new Callback<JsonObject>() {
+							postComment, postLatlng, new Callback<JsonObject>() {
 						@Override
 						public void success(JsonObject jsonObject, Response response) {
-							markerDatas.add(new MarkerData((LatLng)data.getParcelableExtra("latlng")));
-							markerDatas.get(markerDatas.size()-1).marker = backgroundMap.addMarker(new MarkerOptions().position(markerDatas.get(markerDatas.size()-1).location).title(data.getStringExtra("comment")));
-
+							markerDatas.add(new MarkerData(postLatlng,postComment));
+							markerDatas.get(markerDatas.size()-1).marker = backgroundMap.addMarker(new MarkerOptions().position(markerDatas.get(markerDatas.size()-1).location).title(markerDatas.get(markerDatas.size()-1).letter));
+							Toast.makeText(getActivity(), "Post 등록 성공".toString(), Toast.LENGTH_LONG).show();
 						}
 
 						@Override
 						public void failure(RetrofitError error) {
+							Log.i("Post 등록 실패",error.getMessage().toString());
+							Toast.makeText(getActivity(), "Post 등록 실패".toString(), Toast.LENGTH_LONG).show();
 						}
 					});
 				}
