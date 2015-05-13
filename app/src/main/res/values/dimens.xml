@@ -17,6 +17,6 @@
         <dimen name="size_65">65dp</dimen>
         <dimen name="grid_item_height">120dp</dimen>
         <dimen name="gallery_item_height">140dip</dimen>
-
+    <dimen name="transfer_row_height">30dp</dimen>
 </resources>
 

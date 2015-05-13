@@ -1,16 +1,15 @@
 package com.mapia;
 
-import com.google.android.gms.maps.model.LatLng;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
+import android.util.Log;
 
-import org.json.JSONArray;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.gson.JsonObject;
 
 import java.io.IOException;
 import java.net.CookieHandler;
 import java.net.CookieManager;
 import java.net.URI;
-import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -21,7 +20,6 @@ import retrofit.http.Body;
 import retrofit.http.GET;
 import retrofit.http.Headers;
 import retrofit.http.POST;
-import retrofit.http.Path;
 import retrofit.http.Query;
 
 
@@ -135,6 +133,16 @@ public class RestRequestHelper {
         restRequest.posts(postJO, callback);
     }
 
+    public void posts(String content, LatLng latlng, ArrayList<String> filelist, Callback<JsonObject> callback){
+        PostJsonRequest postJO = null;
+        try{
+            postJO = new PostJsonRequest(content, latlng, filelist);
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+        restRequest.posts(postJO, callback);
+    }
+
     public void profile(Callback<JsonObject> callback) {
         restRequest.profile(callback);
     }
@@ -171,6 +179,15 @@ class RestCookieManager extends CookieManager {
 class PostJsonRequest{
     final String content;
     final double lat, lng;
+    ArrayList<String> filelist = new ArrayList<String>();
+
+    PostJsonRequest(String content, LatLng latlng, ArrayList<String> filelist){
+        this.content = content;
+        this.lat = latlng.latitude;
+        this.lng = latlng.longitude;
+        this.filelist = filelist;
+        Log.i("file",filelist.toString());
+    }
 
     PostJsonRequest(String content, LatLng latlng){
         this.content = content;

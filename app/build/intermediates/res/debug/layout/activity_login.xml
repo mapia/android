@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2c3e50"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAPIA"
+        android:textSize="40sp"
+        android:textColor="#efefef"
+        android:layout_gravity="center"
+        android:id="@+id/textView"
+        android:layout_above="@+id/edtID"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtHelpRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Help?"
+        android:textSize="13dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/btnSignup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/edtID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:minHeight="@null"
+        android:hint="User ID"
+        android:text="admin"
+        android:padding="15dp"
+        android:background="@drawable/round_corner_top"
+        android:textSize="13sp"
+        android:layout_above="@+id/edtPW"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtPW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:minHeight="@null"
+        android:hint="Password"
+        android:text="admin"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:background="@drawable/round_corner_bot"
+        android:textSize="13sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:minHeight="@null"
+        android:padding="10dp"
+        android:background="#13212f"
+        android:text="로그인"
+        android:textColor="#efefef"
+        android:textSize="15sp"
+        android:layout_below="@+id/edtPW"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="60dp"
+        android:minHeight="@null"
+        android:padding="10dp"
+        android:background="#43576b"
+        android:text="가입하기"
+        android:textColor="#13212f"
+        android:textSize="13sp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+<!-- From: file:/Users/daehyun/GitHub/android/app/src/main/res/layout/activity_login.xml -->

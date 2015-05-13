@@ -1,7 +1,5 @@
 package com.mapia.map;
 
-import java.util.ArrayList;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -15,11 +13,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.google.android.gms.identity.intents.AddressConstants;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -31,6 +27,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.gson.JsonObject;
 import com.mapia.R;
 import com.mapia.RestRequestHelper;
+
+import java.util.ArrayList;
 
 import retrofit.Callback;
 import retrofit.RetrofitError;
@@ -140,21 +138,52 @@ public class MapFragment extends Fragment implements OnClickListener, LocationLi
 					RestRequestHelper requestHelper = RestRequestHelper.newInstance();
 					final LatLng postLatlng = (LatLng)data.getParcelableExtra("latlng");
 					final String postComment = (String)data.getStringExtra("comment");
-					requestHelper.posts(
-							postComment, postLatlng, new Callback<JsonObject>() {
-						@Override
-						public void success(JsonObject jsonObject, Response response) {
-							markerDatas.add(new MarkerData(postLatlng,postComment));
-							markerDatas.get(markerDatas.size()-1).marker = backgroundMap.addMarker(new MarkerOptions().position(markerDatas.get(markerDatas.size()-1).location).title(markerDatas.get(markerDatas.size()-1).letter));
-							Toast.makeText(getActivity(), "Post 등록 성공".toString(), Toast.LENGTH_LONG).show();
-						}
+                    final ArrayList<String> fileList;
+                    if((ArrayList<String>)data.getStringArrayListExtra("filelist") != null) {
+                        fileList = (ArrayList<String>) data.getStringArrayListExtra("filelist");
+                        requestHelper.posts(
+                                postComment, postLatlng, fileList, new Callback<JsonObject>() {
+                                    @Override
+                                    public void success(JsonObject jsonObject, Response response) {
+                                        markerDatas.add(new MarkerData(postLatlng, postComment));
+                                        markerDatas.get(markerDatas.size() - 1).marker = backgroundMap.addMarker(new MarkerOptions().position(markerDatas.get(markerDatas.size() - 1).location).title(markerDatas.get(markerDatas.size() - 1).letter));
 
-						@Override
-						public void failure(RetrofitError error) {
-							Log.i("Post 등록 실패",error.getMessage().toString());
-							Toast.makeText(getActivity(), "Post 등록 실패".toString(), Toast.LENGTH_LONG).show();
-						}
-					});
+                                        String filename = ((ArrayList<String>)data.getStringArrayListExtra("filelist")).get(0);
+                                        String keyPrefix = "us-east-1:6638a26e-2810-4e4b-8d50-11cce837133f/";
+                                        String[] keyArr = new String[1];
+                                        keyArr[0] = keyPrefix+filename;
+                                        //File Download Module
+//                                        TransferController.download(WritePostActivity.this, keyArr);
+
+                                        Toast.makeText(getActivity(), "Post 등록 성공".toString(), Toast.LENGTH_LONG).show();
+                                    }
+
+                                    @Override
+                                    public void failure(RetrofitError error) {
+                                        Log.i("Post 등록 실패", error.getMessage().toString());
+                                        Toast.makeText(getActivity(), "Post 등록 실패".toString(), Toast.LENGTH_LONG).show();
+                                    }
+                                });
+
+
+                    }
+                    else{
+                            requestHelper.posts(
+                                    postComment, postLatlng, new Callback<JsonObject>() {
+                                        @Override
+                                        public void success(JsonObject jsonObject, Response response) {
+                                            markerDatas.add(new MarkerData(postLatlng, postComment));
+                                            markerDatas.get(markerDatas.size() - 1).marker = backgroundMap.addMarker(new MarkerOptions().position(markerDatas.get(markerDatas.size() - 1).location).title(markerDatas.get(markerDatas.size() - 1).letter));
+                                            Toast.makeText(getActivity(), "Post 등록 성공".toString(), Toast.LENGTH_LONG).show();
+                                        }
+
+                                        @Override
+                                        public void failure(RetrofitError error) {
+                                            Log.i("Post 등록 실패", error.getMessage().toString());
+                                            Toast.makeText(getActivity(), "Post 등록 실패".toString(), Toast.LENGTH_LONG).show();
+                                        }
+                                    });
+                        }
 				}
 				else{
 

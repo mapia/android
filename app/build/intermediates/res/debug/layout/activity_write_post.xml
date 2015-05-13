@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cfcfcf"
+    tools:context="com.mapia.map.WritePostActivity">
+
+    <LinearLayout
+        android:id="@+id/llPostLocation"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dot"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="장소"
+            android:textSize="16sp"
+            android:textColor="#5f5f5f"
+            android:layout_marginRight="20dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtPostLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="이화여자대학교 학관"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dot"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scvPost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/llPostLocation"
+        android:layout_above="@+id/llPostBottom">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/txtPostComment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minLines="5"
+                android:gravity="top|left"
+                android:background="@null"
+                android:text="코끼리 아저씨는 코가손이래\n과자를 주면은 코로 받지요\n\n#학관 #인간코끼리"
+                android:inputType="textMultiLine"
+                android:scrollHorizontally="false"
+                android:layout_margin="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llPostBottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#efefef">
+
+        <Button
+            android:id="@+id/actBtnAddImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/dot"
+            android:scaleType="fitCenter"/>
+
+        <Button
+            android:id="@+id/actBtnAddVideo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/dot"
+            android:scaleType="fitCenter"/>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/dot"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/daehyun/GitHub/android/app/src/main/res/layout/activity_write_post.xml -->

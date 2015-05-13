@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-a0c0fc138f8e1bf6dcbaebafe9905ed87121aa4f.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="5ea948d825957be6c4358c48422bee60eef2d487">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-66687ecc95bd5b60b37fcba225e22e7b2be05bf3.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="fe3e0c6de7cceed888b277487238b6af9a1cc299">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-9e542504d0b5d3da4fbed8e34a3fd036a17acfc9.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.github.asne/asne-linkedin/0.3.1/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="59e98739d6527f0af5d897dec4759a5369357164">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-08343a04c6985321bec66fa3344a4c5a0acad2c3.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.8.0/a517f29ed06be2b2879524fcd94b6e9b36e2e0b5/retrofit-1.8.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a517f29ed06be2b2879524fcd94b6e9b36e2e0b5">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/retrofit-1.8.0-7ab903eeefb7cfd41c44d63398c75278d06cbc62.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-c6596fcf67f3290e9f217dba033d0a68f40a1e88.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.2/91c20388c9a45f62b5ed8fe0502bb76ff6251fc7/bolts-android-1.1.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="91c20388c9a45f62b5ed8fe0502bb76ff6251fc7">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.2-0ab5e23c59eb1c40fd76c7d160303a0e090c4646.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="6046e5cdaf799120b7c56a5a061d80e8854c4d34">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-8e8414fdd510c8e890fce5cefa13c67312e960cb.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-986a544dafaba83058171e16aa77882050ba9e10.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="59652857a825fff0de62166fca1bc9553cc01abb">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-9c126779969270a9c65a5a45b2342b92157dea42.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.github.asne/asne-core/0.3.1/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="5b849e598d2c51484a35fdcebed104e71fe9542d">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-b0fa80e5d156667863f1730097fad05a5694ff31.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.github.asne/asne-core/0.3.1/libs/signpost-core-1.2.1.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="47d92007ca13efd47efad1af94d842ecb5066310">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/signpost-core-1.2.1.1-3b45f45877b363904674ebc1ee76fb07302c0cf8.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3b4ff5c39dace8f3b4ab4cab8191785547a0815f">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-3fe7172537646af76e0330e2666d293ec7905532.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-1e539079baad219a38aad19369f35125bdf57abb.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-b3da7e495076f4494f09f44011554d63fd5d509a.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-7a73408c469d2546c4c1b64344764f4bd61f7459.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-9f684aedca413241191e5580f0a80c75e837c2f7.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9c9dea9e85aceb09d95df5e6f7bc8a43fc286068">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-2d37f75f4781ba931892fe1e7bdde983f54564a7.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.github.asne/asne-core/0.3.1/libs/signpost-commonshttp4-1.2.1.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1e6380adcb5808bfe13a934a2f35bfeed1adbc49">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/signpost-commonshttp4-1.2.1.1-99efee37af104a07bc9082dea3a10d0098b0145a.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-79ae0eb8f9ec41641c2c9075b13d9161f97bf195.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-f836f4f4169098afac2ffb73e427298302e873a3.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-eae7417ac9c3b0a5588640c3bfc232b3840044ae.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e5bf453b070c1e39297986144960e45afa0fdfad">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-4150436d45135417b9d278cb0b407ba2fe27cdff.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.github.asne/asne-twitter/0.3.1/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="84c1883d701193212962152b9eb441f278e1a1dd">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-c70a0dd10719a993773f106ecaac7562af476399.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0180d031a7b54dabb93b4af3869468b55dc938bd">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-3aac334bd2230c41b8879a6a6179e8058ebc1139.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.github.asne/asne-core/0.3.1/libs/signpost-core-1.2.1.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="47d92007ca13efd47efad1af94d842ecb5066310">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/signpost-core-1.2.1.1-7a19da8aaf1d93225041d01a445b93fae40e515b.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.github.asne/asne-twitter/0.3.1/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="84c1883d701193212962152b9eb441f278e1a1dd">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-5bf3f5ef59b159b4eaeb2fe428a88a86315149b7.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-3434d2536d34acfbebabd205177796344ce84206.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0708ef60917bf94913fe9ef972a655b99462dca7">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-110e3280ad8ac8d9d77f68000089b6ed6ad8f6f9.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3988694bf9d8186ff97ad5cdfa4ed88b5010fe08">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-8d7895f024562839e3e1ccde1df3934e30e3168d.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e35fae1b377c23aa5fd2d309a190c2d0f73d54ec">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-9ab930040b89b3fff096a0727123baa2a17967f6.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/gson-2.3.1-28ff97617e1e0c33d680d623c8f60d02b9eb251d.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.5/77bf7cacf9cefe19dc105e5425d2eb1bb5285881/android-async-http-1.4.5.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.5-e1775e59b7668f64d26bafa746ed4709c57b4aae.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-cognito/2.2.1/729bcf0c29bf66cc048f11c48f0e13873858fe6/aws-android-sdk-cognito-2.2.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0729bcf0c29bf66cc048f11c48f0e13873858fe6">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/aws-android-sdk-cognito-2.2.1-116946aa6931b2bbe0b6eb2cc028328620325b35.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.github.asne/asne-core/0.3.1/libs/signpost-commonshttp4-1.2.1.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="1e6380adcb5808bfe13a934a2f35bfeed1adbc49">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/signpost-commonshttp4-1.2.1.1-5aa7e069e1eff80b3bee4adb2e787a18a813f019.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-51e425d468664114f350292d3774e9c324fa3450.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-e2d0a47436409f4cb904f28a8cc6df3d205d249d.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.19.1/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="44fd589d7c4f5bf1aa2df0167315a1b1e1a20d83">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-173944502226303fd4d68d8a3f88718d51e94213.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.github.asne/asne-linkedin/0.3.1/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="59e98739d6527f0af5d897dec4759a5369357164">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-1f3ec63714c14cab18e6d32c2698abae2f4c6be3.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-c552f25d2c246c88b946d9c44818a5ca63a449f2.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-1ad624f339e605e97ef07ae40eddbddbafa11800.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b48d5c51a9a9e329005106b4667f54948de4d4d8">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-0b85344444e08edf8356b07e72ed6475d8b3259a.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-41b1b6434356c59f7ee4e50ded35e321ec150f77.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.github.asne/asne-facebook/0.3.1/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="c7a6efb52a568f5100711c2939486267f2435480">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-0cf58c6736549852e21877a955e926b46d10d359.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-14c632d3fd806806f3792a82bbdad5eb7a6fdf53.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e5b9f5b0aa8dee788beb63d23832cb29ce771343">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-a9c11f9874cdfd54766b0a33d84c0b004c7aa2f6.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="565a01f90f1529f73362707c4c185d0623a68782">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-1ef209e83ffbf7b0b14d2fa0c3d3353d88e70626.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/android-sdks/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-2865e07bbce2ebe5c4d23fc98043d1500dc27c79.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.19.1/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="44fd589d7c4f5bf1aa2df0167315a1b1e1a20d83">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-ed21bc66537073d130d8a35b9efa0f919a46fcd6.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a0ce76dfaccbfbd6c551ed2174280aaabe60fe47">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-979c8d151f778192d55ccb7753c2197f1465f97a.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="7215ac1f2fca947b9415a6ee2a1bf991364aab24">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-42df1f7af851c947b9a7f1646e50152157fd3025.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/.gradle/caches/modules-2/files-2.1/org.twitter4j/twitter4j-core/4.0.2/6555e7c45f5db0006823731b2ddb536d481e11d1/twitter4j-core-4.0.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="6555e7c45f5db0006823731b2ddb536d481e11d1">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/twitter4j-core-4.0.2-c5009fff1bd803ea420eb73483d9d90b1b743b5a.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-537c306776c7f5a9a9b11459ca40287ca7d873fc.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-8011aefe94aa3691dceb373f05ccf8383e02df63.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.github.asne/asne-linkedin/0.3.1/libs/linkedin-j-android-1.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="13bae5a8934c403ab39853974dd6e798d2217ae7">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/linkedin-j-android-1.0-f18093ca1e9f31c5487f4a6dff5621a0f446b7b5.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b2c07cdb814fe988ad05f7b4d767a841514a5991">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-d0adb6a29962b58ded26726f47af3bbe03a07c3f.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-s3/2.2.0/f25137ad5db366995680626a659ad32764ceefbf/aws-android-sdk-s3-2.2.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f25137ad5db366995680626a659ad32764ceefbf">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/aws-android-sdk-s3-2.2.0-133db6e68f454c5ec190b6e61e6fb6e94c081dea.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-685bbc137386cdb0b6ce0941157fdb3e8d5161b2.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f2f7ec211ce4d244ee97a57523eeb4526dc3cf8a">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-f5723c89673cca7bc88f48c8edffdb1447d41723.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-1659ea5a735d6d607f1c62cc879182f51e3812f0.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-core/2.2.1/36d1a20986f3b98033fc7bcf49724ad199a5cde7/aws-android-sdk-core-2.2.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="36d1a20986f3b98033fc7bcf49724ad199a5cde7">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/aws-android-sdk-core-2.2.1-421ea80f4cdef11936b854e7b5e0e1b3ba7aaa46.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4f4fe3c23776540625f3c2844152a7510fddf9f1">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-06b5bbf0505cdeadc537666ccf45bd159e194278.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.2.0/74137f8d9aac26dd9463efe32271f2be8d41cda9/picasso-2.2.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="74137f8d9aac26dd9463efe32271f2be8d41cda9">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/picasso-2.2.0-8c8323c94b7d62a19c286612825d7e6bc670a024.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.github.asne/asne-core/0.3.1/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="5b849e598d2c51484a35fdcebed104e71fe9542d">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-186a7a130688df2a44197afac6e9dc3b8f54b524.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-f6374cabe930b083ba0b6d6945a56df4c78fdf61.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-4608266fb4fe64976c7ac8b5c35f496fb112eebf.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/classes-6df93c38e7063f51cef726e5dc0b32ca457361f7.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/daehyun/AndroidStudioProjects/mapia/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-a9a898f4e0f8e766eb457f8198cb1551315c3c90.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.3.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="bb36004beb02b69562cbec9aa7d6a3cf16bf5d1b">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-0f948182aee27daee51b51762d0801177ef3621c.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.github.asne/asne-linkedin/0.3.1/libs/linkedin-j-android-1.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="13bae5a8934c403ab39853974dd6e798d2217ae7">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/linkedin-j-android-1.0-59099667a1c477aed8d91fbe438546534b1f3a9c.jar" />
+    </item>
+    <item
+        jar="/Users/daehyun/GitHub/android/app/build/intermediates/exploded-aar/com.github.asne/asne-facebook/0.3.1/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="c7a6efb52a568f5100711c2939486267f2435480">
+        <dex dex="/Users/daehyun/GitHub/android/app/build/intermediates/pre-dexed/debug/classes-e53bf86ccb1aa412d3432a46475310b79a52f960.jar" />
+    </item>
+
+</items>

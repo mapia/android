@@ -57,4 +57,26 @@
 
         <string name="activity_signup_clause">계속 진행할 시 <b>개인정보취급방침</b>을 읽었으며 <b>서비스 약관</b>에\n동의하신 것으로 간주됩니다.</string>
     <string name="title_activity_write_post">WritePostActivity</string>
+
+
+
+
+    <string name="download">Download</string>
+    <string name="resume">Resume</string>
+    <string name="refresh">Refresh</string>
+    <string name="refreshing">Refreshing..</string>
+    <string name="canceled">Canceled</string>
+    <string name="finished">Finished</string>
+    <string name="size">Size</string>
+    <string name="key">Key</string>
+    <string name="nothing_found_to_open_file">
+        There\'s nothing that can open this type of file
+    </string>
+    <string name="files_to_be_uploaded">Files to be uploaded:</string>
+    <string name="transfers">Transfers:</string>
+    <string name="open">Open</string>
+    <string name="upload_video">Upload A Video</string>
+    <string name="upload_image">Upload An Image</string>
+    <string name="create_bucket">Create bucket</string>
+    <string name="delete_bucket">Delete bucket</string>
 </resources>
